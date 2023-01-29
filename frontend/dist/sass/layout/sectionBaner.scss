@@ -1,0 +1,115 @@
+.section_baner {
+  font-size: 1.6rem;
+  margin: 6rem 0;
+  cursor: pointer;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: ease-in-out;
+  .baner-content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .baner-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      text-align: justify;
+      width: 50rem;
+      height: 50rem;
+      margin-top: 3rem;
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--white);
+        margin-left: 3rem;
+        width: 30rem;
+      }
+
+      h2 {
+        width: 30rem;
+        margin-left: 3rem;
+        color: var(--grey-light3);
+      }
+      .btn-tertiary {
+        color: var(--white);
+        border: 2px solid var(--white);
+        transition: all 0.3s;
+        margin-left: 18rem;
+        &:hover {
+          background-color: var(--green-light);
+          border: 2px solid var(--green-light);
+        }
+      }
+    }
+    .baner-box-1 {
+      background-image: url("./../image/baner/baner2.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .baner-box-2 {
+      background-image: url("./../image/baner/baner1.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .baner-content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    .baner-box {
+      width: 35rem;
+      height: 20rem;
+      display: flex;
+      margin-top: 3rem;
+
+      .baner-img {
+        height: 20rem;
+        width: 20rem;
+        img {
+          height: 20rem;
+          width: 20rem;
+        }
+      }
+      .baner-descript {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 1rem;
+        color: var(--white);
+        transition: all 0.2s;
+        .btn_fourth:hover {
+          border-bottom: 1px solid var(--red);
+        }
+      }
+    }
+    .baner-box3 {
+      background-image: linear-gradient(
+        to bottom,
+        var(--grad-g-dark),
+        var(--grad-g-light)
+      );
+    }
+    .baner-box2 {
+      background-image: linear-gradient(
+        to bottom,
+        var(--grad-g-dark1),
+        var(--grad-g-light2)
+      );
+    }
+    .baner-box1 {
+      background-image: linear-gradient(
+        to bottom,
+        var(--grad-v-dark),
+        var(--grad-v-light)
+      );
+    }
+  }
+}
+

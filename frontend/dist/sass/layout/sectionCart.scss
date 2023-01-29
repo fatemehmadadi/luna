@@ -1,0 +1,108 @@
+.sectionCart {
+  width: 100%;
+  padding: 15rem 1rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: var(--font-color);
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: ease-in-out;
+  table {
+    width: 100%;
+    thead td {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 700;
+      border: 1px solid var(--green-light);
+      border-left: none;
+      border-right: none;
+      padding: 1rem 0;
+    }
+
+    tbody td {
+      text-align: center;
+      padding-top: 3rem;
+      font-size: 1.3rem;
+    }
+
+    tbody td select {
+      height: 3rem;
+      width: 10rem;
+      font-size: 1.6rem;
+      font-family: inherit;
+      color: var(--font-color);
+      outline: none;
+    }
+
+    tbody td i {
+      color: var(--red);
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    img {
+      width: 7rem;
+    }
+  }
+}
+// price
+#full-price {
+  font-size: 1.6rem;
+  padding: 2rem;
+  width: 30%;
+  margin-right: 8rem;
+  border: 1px solid var(--green-dark);
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 0.5rem 1rem var(--grey-light2);
+  h4 {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    color: var(--green-light);
+  }
+  .detailSend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+    h5 {
+      width: 40%;
+      font-size: 1.4rem;
+      padding: 1rem 1rem;
+      background-color: var(--green-light);
+      color: var(--white);
+      text-align: center;
+    }
+    h6 {
+      width: 60%;
+      font-size: 1.4rem;
+      color: var(--red);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  }
+  a {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    &:hover {
+      background-color: var(--green-light);
+      border: 1px solid var(--green-light);
+      color: var(--white);
+    }
+  }
+}
+.empty {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+// //////res
+@media (max-width: 60rem) {
+  #full-price {
+    width: 50%;
+  }
+}

@@ -1,0 +1,52 @@
+.news {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./../image/seaction1/news.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 6rem 0 0 0;
+
+  .news-text {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--white);
+    span {
+      color: var(--red);
+    }
+  }
+  .email {
+    display: flex;
+    input {
+      font-size: 1.6rem;
+      font-family: inherit;
+      color: var(--font-color);
+      padding: 0.8rem 4rem;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+    a {
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--white);
+      text-decoration: none;
+      background-color: var(--green-light);
+      padding: 1rem 1rem;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+/////////////res
+@media (max-width: 60rem) {
+  .news {
+    flex-direction: column;
+  }
+}

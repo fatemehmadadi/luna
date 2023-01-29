@@ -1,0 +1,23 @@
+{
+  "name": "notur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "watch": "node-sass dist/sass/main.scss dist/css/main.css --watch",
+    "compile": "node-sass dist/sass/main.scss dist/css/main.css"
+  },
+  "author": "fm",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.6.0",
+    "node-sass": "^7.0.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
+}

@@ -1,0 +1,65 @@
+.section_bestProducts {
+  margin-top: 8rem;
+  padding: 0 1rem;
+  .section_bestProducts-h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: ease-in-out;
+  }
+  .products {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-delay: ease-in-out;
+    li {
+      border: solid 2px var(--grey-light2);
+      margin-top: 2rem;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0.5rem 2rem var(--grey-light2);
+      }
+    }
+    li a {
+      text-decoration: none;
+      color: var(--font-color);
+      img {
+        width: 26rem;
+        height: 26rem;
+      }
+      .heading_fourth {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        text-align: center;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        .discount_price {
+          font-size: 1.6rem;
+          span {
+            margin-left: 0.5rem;
+            font-weight: bold;
+            color: var(--red);
+          }
+        }
+        .main_price {
+          font-size: 1.6rem;
+          span {
+            margin-left: 0.5rem;
+            font-weight: bold;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

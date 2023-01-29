@@ -1,0 +1,25 @@
+.header_prod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  background-image: linear-gradient(to bottom, var(--white2), var(--white2)),
+    url("./../image/seaction1/headerProd.jpg");
+  background-position: top;
+  background-size: cover;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-delay: ease-in-out;
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--font-color);
+  }
+}

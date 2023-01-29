@@ -1,0 +1,110 @@
+.section_products {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-delay: ease-in-out;
+  .section_Products-h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    padding: 1rem;
+
+    .prod {
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--white);
+      border-radius: 1rem;
+      padding: 1rem 0.5rem;
+      background-color: var(--grey-light);
+      margin-top: 2rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      .prod_img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 1rem;
+      }
+      .prod_title {
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+      }
+      .prod-detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        .prod-num {
+          font-size: 1.2rem;
+          font-weight: bolder;
+          color: var(--grey-light2);
+        }
+        .star-box {
+          display: flex;
+          .prod_rating-star {
+            font-size: 1.8rem;
+            color: var(--yellow);
+            margin-right: 0.6rem;
+          }
+        }
+        .prod_rating-num {
+          font-weight: bolder;
+          color: var(--grey-light1);
+        }
+        .prod-inventory {
+          &-true {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--green);
+          }
+          &-false {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--red);
+          }
+        }
+        .prod-price {
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: var(--red);
+        }
+        .discount_price {
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: var(--grey-light1);
+          span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    .prod:hover {
+      box-shadow: 0 0.5rem 2rem var(--grey-light2);
+      transform: translateY(-1rem);
+    }
+  }
+
+  .btn-tertiary {
+    margin: 3rem 2rem 0rem 0rem;
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    transition: all 0.3s;
+    background-color: var(--white);
+    &:hover {
+      border: 1px solid var(--green-dark);
+      background-color: var(--green-dark);
+      color: var(--white);
+    }
+  }
+  .mid-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
