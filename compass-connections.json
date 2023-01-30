@@ -1,0 +1,23 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "52478c0c-3d27-4ffb-a869-c6faec04194a",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost/luna"
+      },
+      "favorite": {
+        "name": "luna",
+        "color": "color2"
+      },
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1675066799943"
+        }
+      }
+    }
+  ]
+}
